@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New Regular Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New Medium Italic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New SemiBold Italic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New Bold Italic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New ExtraBold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New ExtraBold Italic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New UltraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hero New";
+  src: url("/public/fonts/Hero New UltraLight Italic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+:root {
+  font-family: "Hero New", sans-serif;
+}
+
+.reviews-slider .slick-slide {
+  margin: 0 20px;
+}
