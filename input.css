@@ -91,3 +91,16 @@
 .reviews-slider .slick-slide {
   margin: 0 20px;
 }
+
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-slow {
+  animation: rotateSlow 20s linear infinite;
+}

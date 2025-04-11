@@ -24,65 +24,28 @@
     <link href="./input.css" rel="stylesheet" />
   </head>
   <body class="bg-white max-w-[1600px] mx-auto relative">
-    <section class="flex justify-end">
+    <section class="absolute z-20 w-full flex justify-end pr-[80px] pt-[10px]">
       <div class="flex items-center gap-[10px] mr-[30px]">
-        <img src="/public/images/email.png" alt="" class="w-[25px]" />
-        <p class="text-[13px] pt-[3px]">info@greenlight-digital.co.uk</p>
+        <img src="/public/images/email.png" alt="" class="w-[20px]" />
+        <p class="text-[13px] pt-[3px] text-white">
+          info@greenlight-digital.co.uk
+        </p>
       </div>
       <div class="flex items-center gap-[10px] mr-[30px]">
-        <img src="/public/images/phone.png" alt="" class="w-[20px]" />
-        <p class="text-[13px] pt-[3px]">01234 567 890</p>
+        <img src="/public/images/phone.png" alt="" class="w-[16px]" />
+        <p class="text-[13px] pt-[3px] text-white">01234 567 890</p>
       </div>
       <div class="flex items-center gap-[10px]">
-        <img src="/public/images/facebook.png" alt="" class="w-[23px]" />
-        <img src="/public/images/linkedin.png" alt="" class="w-[30px]" />
-        <img src="/public/images/instagram.png" alt="" class="w-[25px]" />
+        <img src="/public/images/facebook.png" alt="" class="w-[18px]" />
+        <img src="/public/images/linkedin.png" alt="" class="w-[20px]" />
+        <img src="/public/images/instagram.png" alt="" class="w-[20px]" />
       </div>
     </section>
-    <section class="fixed z-[1] max-w-[1600px] w-[100%]">
-      <header
-        class="px-[80px] w-[100%] transition-all duration-300 ease-in-out"
-      >
-        <div class="flex justify-between items-center h-[80px]">
-          <img
-            src="/public/images/logo.png"
-            alt=""
-            class="w-[200px] cursor-pointer"
-          />
-          <img
-            src="/public/images/menu.png"
-            alt=""
-            class="w-[50px] lg:hidden"
-          />
-          <ul class="lg:flex items-center gap-[50px] hidden">
-            <li
-              class="font-bold cursor-pointer text-white hover:text-[#AEE9B6]"
-            >
-              Our Websites
-            </li>
-            <li
-              class="font-bold cursor-pointer text-white hover:text-[#AEE9B6]"
-            >
-              About Us
-            </li>
-            <li
-              class="font-bold cursor-pointer text-white hover:text-[#AEE9B6]"
-            >
-              Reviews
-            </li>
-            <li
-              class="bg-[#AEE9B6] px-[30px] py-[8px] rounded-[10px] cursor-pointer"
-            >
-              <button class="text-[#032727] cursor-pointer font-bold">
-                Talk To Us
-              </button>
-            </li>
-          </ul>
-        </div>
-      </header>
-    </section>
 
-    <section class="fixed z-[10] max-w-[1600px] w-full">
+    <section
+      id="mainHeader"
+      class="fixed z-[10] top-12 max-w-[1600px] w-full transition-all duration-300 ease-in-out"
+    >
       <header
         class="px-[20px] md:px-[80px] w-full transition-all duration-300 ease-in-out"
       >
@@ -103,6 +66,7 @@
           <ul class="lg:flex items-center gap-[50px] hidden">
             <li
               class="font-bold cursor-pointer text-white hover:text-[#AEE9B6]"
+              id="our-websites"
             >
               Our Websites
             </li>
@@ -194,7 +158,7 @@
             <img
               src="/public/images/bannerBG.png"
               alt=""
-              class="w-[70%] mt-[175px] ml-[30px]"
+              class="w-[70%] mt-[175px] ml-[30px] rotate-slow"
             />
             <img
               src="/public/images/bannerPhone.png"
@@ -206,7 +170,7 @@
       </div>
     </section>
 
-    <section class="mb-[150px] w-[90%] m-auto pt-[100px]">
+    <section class="mb-[150px] w-[90%] m-auto pt-[100px]" id="#our-websites">
       <div class="flex items-center justify-between mb-[30px]">
         <div class="flex items-center gap-[40px]">
           <h1 class="text-[52px] font-extrabold text-[#240D4B]">
@@ -1042,17 +1006,17 @@
                   <img
                     src="/public/images/facebook.png"
                     alt="phone icon"
-                    class="w-[16px]"
+                    class="w-[10px] h-[18px]"
                   />
                   <img
                     src="/public/images/linkedin.png"
                     alt="email icon"
-                    class="w-[16px]"
+                    class="w-[20px] h-[20px]"
                   />
                   <img
                     src="/public/images/instagram.png"
                     alt="email icon"
-                    class="w-[16px]"
+                    class="w-[18px] h-[18px]"
                   />
                 </div>
               </div>
@@ -1082,15 +1046,17 @@
       $(document).ready(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 50) {
+            $("#mainHeader").removeClass("top-12").addClass("top-0");
+
             $("header")
               .removeClass("bg-transparent")
               .addClass("bg-[#240D4B] shadow-lg");
-            $("header ul li").removeClass("text-white").addClass("text-white"); // Keep text white
           } else {
+            $("#mainHeader").removeClass("top-0").addClass("top-12");
+
             $("header")
               .removeClass("bg-[#240D4B] shadow-lg")
               .addClass("bg-transparent");
-            $("header ul li").removeClass("text-white").addClass("text-white"); // Ensure text remains white
           }
         });
       });
