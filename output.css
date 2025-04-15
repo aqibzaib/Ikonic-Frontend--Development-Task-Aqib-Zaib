@@ -207,6 +207,12 @@
   .top-12 {
     top: calc(var(--spacing) * 12);
   }
+  .top-100 {
+    top: calc(var(--spacing) * 100);
+  }
+  .top-120 {
+    top: calc(var(--spacing) * 120);
+  }
   .top-\[-110px\] {
     top: -110px;
   }
@@ -1173,6 +1179,11 @@
       font-size: 60px;
     }
   }
+  .md\:top-12 {
+    @media (width >= 48rem) {
+      top: calc(var(--spacing) * 12);
+    }
+  }
   .md\:top-\[125px\] {
     @media (width >= 48rem) {
       top: 125px;
@@ -1216,6 +1227,11 @@
   .md\:block {
     @media (width >= 48rem) {
       display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
     }
   }
   .md\:hidden {

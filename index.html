@@ -24,7 +24,9 @@
     <link href="./input.css" rel="stylesheet" />
   </head>
   <body class="bg-white max-w-[1600px] mx-auto relative">
-    <section class="absolute z-20 w-full flex justify-end pr-[80px] pt-[10px]">
+    <section
+      class="absolute z-20 w-full md:flex justify-end pr-[80px] pt-[10px] hidden"
+    >
       <div class="flex items-center gap-[10px] mr-[30px]">
         <img src="/public/images/email.png" alt="" class="w-[20px]" />
         <p class="text-[13px] pt-[3px] text-white">
@@ -42,10 +44,9 @@
       </div>
     </section>
 
-    <section
-      id="mainHeader"
-      class="fixed z-[10] top-12 max-w-[1600px] w-full transition-all duration-300 ease-in-out"
-    >
+    <section id="mainHeader" <!-- Fix bug of top class at the end -->
+      class="fixed z-[10] top-0 md:top-12 max-w-[1600px] w-full transition-all
+      duration-300 ease-in-out" >
       <header
         class="px-[20px] md:px-[80px] w-full transition-all duration-300 ease-in-out"
       >
