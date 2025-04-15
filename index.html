@@ -63,7 +63,7 @@
             class="w-[40px] lg:hidden cursor-pointer"
           />
 
-          <ul class="lg:flex items-center gap-[50px] hidden">
+          <ul class="lg:flex items-center gap-[30px] hidden">
             <li
               class="font-bold cursor-pointer text-white hover:text-[#AEE9B6]"
               id="our-websites"
@@ -115,62 +115,101 @@
     </section>
 
     <section
-      class="bg-[#240D4B] px-[80px] h-[800px] flex items-center relative"
+      class="bg-[#240D4B] px-5 md:px-[80px] h-auto md:h-[800px] flex items-center relative py-20 md:py-10 md:py-0"
     >
-      <div class="flex justify-between items-center w-[100%] gap-[50px]">
-        <div class="w-[50%] pt-[150px]">
-          <h1 class="text-[90px] font-extrabold text-white">Ready To Go</h1>
-          <h5 class="text-[28px] font-bold text-[#AEE9B6]">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full gap-[30px]"
+      >
+        <div
+          class="w-full md:w-[50%] pt-10 md:pt-[150px] text-center md:text-left"
+        >
+          <h1
+            class="text-[40px] sm:text-[60px] md:text-[90px] font-extrabold text-white leading-tight"
+          >
+            Ready To Go
+          </h1>
+          <h5
+            class="text-[20px] sm:text-[24px] md:text-[28px] font-bold text-[#AEE9B6]"
+          >
             Smart and efficient websites
           </h5>
-          <p class="text-[14px] font-normal mt-[30px] mb-[20px] text-white">
+          <p
+            class="text-[14px] font-normal mt-5 md:mt-[30px] mb-4 md:mb-[20px] text-white"
+          >
             We specialize in building high-quality, template-based websites that
             save you time, energy, and money without sacrificing design or
             functionality.
           </p>
           <p class="text-white">Talk to us and we’ll get you up and running!</p>
-          <div class="mt-[40px] flex gap-[20px]">
+
+          <div
+            class="mt-6 md:mt-[40px] flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+          >
             <button
-              class="bg-[#AEE9B6] w-[150px] text-[14px] rounded-[6px] font-extrabold h-[40px] text-[#032727] cursor-pointer pt-[3px]"
+              class="bg-[#AEE9B6] w-full sm:w-[150px] text-[14px] rounded-[6px] font-extrabold h-[40px] text-[#032727] cursor-pointer pt-[3px]"
             >
               Our Websites
             </button>
             <button
-              class="bg-[transparent] border-[4px] border-[#AEE9B6] w-[150px] rounded-[6px] h-[40px] cursor-pointer font-extrabold pt-[3px] text-[#ffff] text-[14px]"
+              class="bg-transparent border-[4px] border-[#AEE9B6] w-full sm:w-[150px] rounded-[6px] h-[40px] cursor-pointer font-extrabold pt-[3px] text-white text-[14px]"
             >
               Talk To Us
             </button>
           </div>
 
-          <div class="flex items-center gap-[60px] mt-[100px]">
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 sm:gap-[60px] mt-10 md:mt-[100px]"
+          >
             <img
               src="/public/images/arrow-down.png"
-              alt=""
+              alt="arrow down"
               class="w-[25px] cursor-pointer"
             />
             <h2 class="text-white font-bold">Affordable options</h2>
           </div>
         </div>
-        <div class="w-[50%]">
+
+        <div class="w-full md:w-[50%] mt-10 md:mt-0 md:block hidden">
           <div
-            class="absolute w-[48.4%] h-[750px] top-0 bg-[#41286C] rounded-bl-[290px]"
+            class="absolute w-full md:w-[48.4%] h-[200px] md:h-[750px] top-0 right-0 bg-[#41286C] md:rounded-bl-[290px] flex items-center justify-center md:items-start md:justify-start"
+          >
+            <div class="relative w-full h-full">
+              <img
+                src="/public/images/bannerBG.png"
+                alt="banner background"
+                class="hidden md:block w-[70%] mt-[175px] ml-[30px] rotate-slow"
+              />
+              <img
+                src="/public/images/bannerPhone.png"
+                alt="banner phone"
+                class="absolute top-[20px] left-[50%] md:top-[125px] md:left-[20px] transform -translate-x-1/2 md:translate-x-0 w-[60%] md:w-[70%]"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- iNSTANCE FOR SMALL SCREENS -->
+        <div
+          class="md:hidden w-full h-auto mt-10 sm:bg-[#41286C] rounded-[15px] py-4"
+        >
+          <div
+            class="relative w-full max-w-[320px] sm:max-w-[280px] md:max-w-[400px] mx-auto aspect-square"
           >
             <img
               src="/public/images/bannerBG.png"
-              alt=""
-              class="w-[70%] mt-[175px] ml-[30px] rotate-slow"
+              alt="banner background"
+              class="w-full h-full object-contain rotate-slow"
             />
             <img
               src="/public/images/bannerPhone.png"
-              alt=""
-              class="absolute top-[125px] left-[20px] w-[70%]"
+              alt="banner phone"
+              class="absolute top-1/2 left-1/2 w-[65%] sm:w-[60%] md:w-[70%] transform -translate-x-1/2 -translate-y-1/2"
             />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="mb-[150px] w-[90%] m-auto pt-[100px]" id="#our-websites">
+    <!-- <section class="mb-[150px] w-[90%] m-auto pt-[100px]" id="#our-websites">
       <div class="flex items-center justify-between mb-[30px]">
         <div class="flex items-center gap-[40px]">
           <h1 class="text-[52px] font-extrabold text-[#240D4B]">
@@ -236,9 +275,9 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="my-[200px]">
+    <!-- <section class="my-[200px]">
       <div class="flex w-[100%] items-center justify-between">
         <div class="w-[50%] relative">
           <div
@@ -400,9 +439,9 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section
+    <!-- <section
       class="flex w-full h-[900px] bg-[url('/public/images/about_bg.png')] bg-cover bg-center"
     >
       <div class="w-[20%] bg-[#AEE9B6]"></div>
@@ -443,9 +482,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="bg-[#240D4B] py-[100px]">
+    <!-- <section class="bg-[#240D4B] py-[100px]">
       <p
         class="text-[#FFFFFF] font-light text-[24px] pl-[100px] tracking-[3px]"
       >
@@ -643,9 +682,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="my-[150px] w-[90%] m-auto">
+    <!-- <section class="my-[150px] w-[90%] m-auto">
       <div class="flex w-[100%] items-center justify-between">
         <div>
           <h1 class="text-[52px] font-extrabold text-[#240D4B]">
@@ -713,9 +752,9 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="mb-[150px] w-[90%] m-auto">
+    <!-- <section class="mb-[150px] w-[90%] m-auto">
       <div class="flex items-center justify-between mb-[30px]">
         <div class="flex items-center gap-[40px]">
           <h1 class="text-[52px] font-extrabold text-[#240D4B]">
@@ -832,9 +871,9 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="w-[90%] mx-auto mb-[150px]">
+    <!-- <section class="w-[90%] mx-auto mb-[150px]">
       <div class="flex items-center justify-between mb-[30px]">
         <h1 class="text-[52px] font-extrabold text-[#240D4B]">
           Follow us on social media
@@ -875,9 +914,9 @@
         </div>
         <img src="/public/images/follow-us.png" alt="" class="w-[350px]" />
       </div>
-    </section>
+    </section> -->
 
-    <footer class="text-white">
+    <!-- <footer class="text-white">
       <div class="flex flex-col flex-wrap pl-10 py-8 bg-[#012221]">
         <div class="flex flex-wrap justify-between items-start w-full">
           <div class="w-full md:w-1/3 lg:w-1/3 p-10 pl-32 mt-10">
@@ -1040,7 +1079,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script>
       $(document).ready(function () {
