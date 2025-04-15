@@ -104,3 +104,11 @@
 .rotate-slow {
   animation: rotateSlow 20s linear infinite;
 }
+
+@media (max-width: 387px) {
+  .our-website {
+    min-width: 100% !important;
+    min-width: -webkit-fill-available !important;
+    min-width: fill-available !important;
+  }
+}
