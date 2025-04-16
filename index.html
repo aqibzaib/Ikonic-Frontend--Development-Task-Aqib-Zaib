@@ -296,27 +296,30 @@
       </div>
     </section>
 
-    <!-- <section class="my-[200px]">
-      <div class="flex w-[100%] items-center justify-between">
+    <section class="my-[200px]">
+      <div class="block lg:flex w-[100%] items-center justify-between">
         <div class="w-[50%] relative">
           <div
-            class="bg-[#AEE9B6] flex rounded-tr-[60px] rounded-br-[60px] w-[92%] h-[650px]"
+            class="bg-[#AEE9B6] lg:flex hidden rounded-tr-[60px] rounded-br-[60px] w-[92%] h-[650px]"
           >
             <img
               src="/public/images/mobileImages.png"
               alt=""
-              class="absolute top-[-110px]"
+              class="absolute top-[-17%]"
             />
           </div>
         </div>
         <div
-          class="w-[60%] bg-[#F5F5F5] py-[55px] px-[80px] rounded-tl-[60px] rounded-bl-[60px] relative overflow-hidden"
+          class="w-full lg:w-[60%] bg-[#F5F5F5] py-[55px] px-[20px] lg:px-[80px] md:rounded-tl-[60px] md:rounded-bl-[60px] rounded-2xl relative overflow-hidden"
         >
-          <h1 class="text-[52px] font-extrabold leading-[60px] text-[#240D4B]">
+          <h1
+            class="text-[32px] sm:text-[40px] lg:text-[52px] font-extrabold leading-[60px] text-[#240D4B]"
+          >
             Get your website in <br />
             <span class="text-[#89D991]">three easy steps </span>
           </h1>
           <div class="flex flex-col mt-[30px] relative">
+            <!-- Step 1: Select -->
             <div class="flex items-center gap-[20px] mb-[10px]">
               <div
                 class="w-[70px] h-[70px] bg-[#89D991] flex justify-center items-center rounded-[50%] p-[12px]"
@@ -335,16 +338,20 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-[26px] font-extrabold text-[#240D4B]">
+                <h3
+                  class="text-[22px] sm:text-[26px] font-extrabold text-[#240D4B]"
+                >
                   Select
                 </h3>
-                <p class="text-[#022221] text-[16px]">
+                <p class="text-[#022221] text-[14px] sm:text-[16px]">
                   From our library of professional-grade templates,
                 </p>
               </div>
             </div>
             <div class="h-[40px] w-[3px] bg-[#240D4B] mx-[30px]"></div>
-            <div class="flex items-center gap-[20px]">
+
+            <!-- Step 2: Customize -->
+            <div class="flex items-center gap-[20px] mb-[10px]">
               <div
                 class="w-[70px] h-[70px] bg-[#89D991] flex justify-center items-center rounded-[50%] p-[12px]"
               >
@@ -362,15 +369,20 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-[26px] font-bold text-[#240D4B]">Customise</h3>
-                <p class="text-[#022221] text-[16px]">
-                  With brand-specific colors, fonts, and images to <br />
-                  make the site uniquely yours.
+                <h3
+                  class="text-[22px] sm:text-[26px] font-extrabold text-[#240D4B]"
+                >
+                  Customize
+                </h3>
+                <p class="text-[#022221] text-[14px] sm:text-[16px]">
+                  Add your content, images, and branding elements.
                 </p>
               </div>
             </div>
             <div class="h-[40px] w-[3px] bg-[#240D4B] mx-[30px]"></div>
-            <div class="flex items-center gap-[20px] mt-[10px]">
+
+            <!-- Step 3: Launch -->
+            <div class="flex items-center gap-[20px]">
               <div
                 class="w-[70px] h-[70px] bg-[#89D991] flex justify-center items-center rounded-[50%] p-[12px]"
               >
@@ -432,19 +444,27 @@
                 </svg>
               </div>
               <div>
-                <h3 class="text-[26px] font-bold text-[#240D4B]">Launch</h3>
-                <p class="text-[#022221] text-[16px]">
-                  A website that’s ready to go live and drive results.
+                <h3
+                  class="text-[22px] sm:text-[26px] font-extrabold text-[#240D4B]"
+                >
+                  Launch
+                </h3>
+                <p class="text-[#022221] text-[14px] sm:text-[16px]">
+                  With a custom domain name, launching is as simple as clicking
+                  a button!
                 </p>
               </div>
             </div>
             <div class="flex gap-[20px] mt-[10px]">
+              <!-- Vertical line image -->
               <div class="ml-[30px]">
-                <img src="/public/images/line.png" alt="" />
+                <img src="/public/images/line.png" alt="vertical line" />
               </div>
+
+              <!-- Button -->
               <div class="mt-[10px]">
                 <button
-                  class="bg-[transparent] border-[#89D991] border-[4px] px-[50px] py-[10px] text-[18px] rounded-[10px] font-bold text-[#232323]"
+                  class="bg-transparent border-[#89D991] border-[4px] px-[50px] py-[10px] text-[18px] rounded-[10px] font-bold text-[#232323]"
                 >
                   Talk To Us
                 </button>
@@ -454,11 +474,11 @@
           <img
             src="/public/images/getWeb.png"
             alt=""
-            class="absolute bottom-[-150px] right-[0px]"
+            class="absolute bottom-[-150px] right-[0px] md:block hidden"
           />
         </div>
       </div>
-    </section> -->
+    </section>
 
     <!-- <section
       class="flex w-full h-[900px] bg-[url('/public/images/about_bg.png')] bg-cover bg-center"
