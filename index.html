@@ -212,7 +212,10 @@
       </div>
     </section>
 
-    <section class="mb-[150px] w-[90%] mx-auto pt-[100px]" id="our-websites">
+    <section
+      class="sm:mb-[30px] mb-[20px] md:mb-[100px] lg:mb-[150px] w-[90%] mx-auto md:pt-[100px] sm:pt-[30px] pt-[20px]"
+      id="our-websites"
+    >
       <div
         class="flex flex-wrap sm:flex-nowrap sm:flex-row sm:items-center justify-between mb-[30px] gap-6 md:gap-0"
       >
@@ -296,7 +299,7 @@
       </div>
     </section>
 
-    <section class="my-[200px]">
+    <section class="md:my-[100px] sm:my-[30px] my-[20px] lg:my-[200px]">
       <div class="block lg:flex w-[100%] items-center justify-between">
         <div class="w-[50%] relative">
           <div
@@ -1250,10 +1253,11 @@
 
     <script>
       $(document).ready(function () {
-        $(window).scroll(function () {
-          const scrollTop = $(this).scrollTop();
+        function handleScroll() {
+          const scrollTop = $(window).scrollTop();
+          const isDesktop = window.matchMedia("(min-width: 768px)").matches;
 
-          // Always handle background color on scroll
+          // Add/remove background color based on scroll
           if (scrollTop > 50) {
             $("header")
               .removeClass("bg-transparent")
@@ -1264,15 +1268,23 @@
               .addClass("bg-transparent");
           }
 
-          // Only handle top-12 ↔ top-0 on md and up
-          if (window.innerWidth >= 768) {
+          // Top class logic
+          if (isDesktop) {
             if (scrollTop > 50) {
-              $("#mainHeader").removeClass("top-12").addClass("top-0");
+              $("#mainHeader").removeClass("md:top-12").addClass("top-0");
             } else {
-              $("#mainHeader").removeClass("top-0").addClass("top-12");
+              $("#mainHeader").removeClass("top-0").addClass("md:top-12");
             }
+          } else {
+            // Always reset to top-0 on mobile
+            $("#mainHeader").removeClass("md:top-12").addClass("top-0");
           }
-        });
+        }
+
+        // Initial call and events
+        handleScroll(); // Run on page load
+        $(window).on("scroll", handleScroll); // Run on scroll
+        $(window).on("resize", handleScroll); // Run on resize
       });
     </script>
 
