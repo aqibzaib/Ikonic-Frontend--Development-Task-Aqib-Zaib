@@ -1251,18 +1251,26 @@
     <script>
       $(document).ready(function () {
         $(window).scroll(function () {
-          if ($(this).scrollTop() > 50) {
-            $("#mainHeader").removeClass("top-12").addClass("top-0");
+          const scrollTop = $(this).scrollTop();
 
+          // Always handle background color on scroll
+          if (scrollTop > 50) {
             $("header")
               .removeClass("bg-transparent")
               .addClass("bg-[#240D4B] shadow-lg");
           } else {
-            $("#mainHeader").removeClass("top-0").addClass("top-12");
-
             $("header")
               .removeClass("bg-[#240D4B] shadow-lg")
               .addClass("bg-transparent");
+          }
+
+          // Only handle top-12 ↔ top-0 on md and up
+          if (window.innerWidth >= 768) {
+            if (scrollTop > 50) {
+              $("#mainHeader").removeClass("top-12").addClass("top-0");
+            } else {
+              $("#mainHeader").removeClass("top-0").addClass("top-12");
+            }
           }
         });
       });
