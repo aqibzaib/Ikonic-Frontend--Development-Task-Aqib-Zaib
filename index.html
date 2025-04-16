@@ -481,27 +481,36 @@
     </section>
 
     <section
-      class="flex w-full h-[900px] bg-[url('/public/images/about_bg.png')] bg-cover bg-center"
+      class="flex flex-col w-full h-auto bg-[url('/public/images/about_bg.png')] bg-cover bg-center sm:h-[600px] sm:flex-col md:flex-row md:h-[900px]"
     >
-      <div class="w-[20%] bg-[#AEE9B6]"></div>
-      <div class="w-[80%] flex items-center">
+      <div
+        class="w-full h-[80px] bg-[#AEE9B6] sm:h-[100px] md:w-[20%] md:h-full"
+      ></div>
+
+      <div
+        class="w-full flex items-center justify-center sm:w-full md:w-[80%] md:items-center"
+      >
         <div
-          class="bg-[#ffff] w-[700px] px-[60px] py-[60px] rounded-[40px] ml-[-250px] mt-[50px]"
+          class="bg-white w-[90%] rounded-[20px] ml-0 mt-[20px] sm:w-[95%] sm:rounded-[25px] sm:mt-[30px] md:w-[90%] px-[40px]  py-[60px] md:rounded-[30px] md:ml-[-150px] md:mt-[40px] lg:w-[700px] lg:px-[60px] lg:rounded-[40px] lg:ml-[-250px] lg:mt-[50px] "
         >
           <h1
-            class="text-[66px] font-extrabold text-[#240D4B] leading-[90px] mb-[20px] sm:text-[36px] sm:leading-[48px] sm:mb-[15px]"
+            class="text-[24px] leading-[36px] mb-[12px] sm:text-[28px] sm:leading-[38px] sm:mb-[12px] md:text-[50px] md:leading-[70px] md:mb-[18px] lg:text-[66px] lg:leading-[90px] lg:mb-[20px] font-extrabold text-[#240D4B]"
           >
             We’re all about simplicity, speed and results
           </h1>
-          <p class="text-[19px] font-light sm:text-[16px] sm:mb-[10px]">
+
+          <p
+            class="text-[15px] mb-[8px] font-light sm:text-[15px] sm:mb-[8px] md:text-[18px] md:mb-[10px] lg:text-[19px]"
+          >
             Our unique approach combines pre-designed templates with
             customisation options to match your brand’s unique identity. This
             means you get a beautifully designed, fully responsive, and
             optimised website faster than ever, with the confidence that
             everything is crafted with intention and expertise.
           </p>
+
           <p
-            class="text-[19px] font-light mt-[20px] sm:text-[16px] sm:mt-[10px]"
+            class="text-[15px] mt-[8px] font-light sm:text-[15px] sm:mt-[8px] md:text-[18px] md:mt-[15px] lg:text-[19px] lg:mt-[20px]"
           >
             We’re not just building websites; we’re powering up your online
             presence
@@ -511,16 +520,16 @@
           </p>
 
           <div
-            class="flex items-center mt-[70px] flex-col md:flex-row gap-[10px] md:gap-[20px] sm:mt-[30px] sm:items-center"
+            class="flex flex-col items-center gap-[10px]  sm:gap-[10px] md:flex-row md:gap-[20px] mt-[50px] lg:mt-[70px]"
           >
             <button
-              class="w-[200px] bg-[#240D4B] text-white font-bold border-[3px] border-[#240D4B] rounded-[10px] py-[10px] sm:w-[90%] sm:px-[10px] sm:py-[10px] md:w-[200px]"
+              class="w-full px-[8px] py-[10px] sm:w-[100%] sm:px-[10px] sm:py-[10px] md:w-[200px] bg-[#240D4B] text-white font-bold border-[3px] border-[#240D4B] rounded-[10px]"
             >
               Find Out More
             </button>
 
             <button
-              class="w-[200px] font-bold border-[3px] rounded-[10px] border-[#89D991] py-[10px] text-[#232323] sm:w-[90%] sm:px-[10px] sm:py-[10px] md:w-[200px]"
+              class="w-full px-[8px] py-[10px] sm:w-[100%] sm:px-[10px] sm:py-[10px] md:w-[200px] font-bold border-[3px] rounded-[10px] border-[#89D991] text-[#232323]"
             >
               Talk To Us
             </button>
