@@ -701,65 +701,89 @@
         </div>
       </div>
 
-      <!-- <div
-        class="flex w-[90%] m-auto h-[1000px] my-[100px] bg-white rounded-[30px]"
+      <div
+        class="flex flex-col lg:flex-row w-[90%] m-auto min-h-[1000px] my-[100px] bg-white rounded-[30px]"
       >
-        <div class="w-[50%]">
+        <!-- Image Section -->
+        <div class="w-full lg:w-1/2 h-[300px] lg:h-auto">
           <img
             src="/public/images/message.png"
-            alt=""
-            class="h-[100%] w-[100%] object-cover rounded-tl-[30px] rounded-bl-[30px]"
+            alt="Message Image"
+            class="h-full w-full object-cover rounded-t-[30px] lg:rounded-tl-[30px] lg:rounded-bl-[30px] lg:rounded-tr-none"
           />
         </div>
-        <div class="w-[50%] h-[100%] pt-[50px]">
-          <div class="ml-[-200px]">
+
+        <!-- Content Section -->
+        <div
+          class="w-full lg:w-1/2 h-full pt-[50px] px-[20px] lg:px-0 lg:py-0 py-4"
+        >
+          <div class="lg:ml-[-200px]">
             <p
               class="bg-[#AEE9B6] w-fit py-[4px] px-[20px] rounded-[15px] font-light text-[#240D4B] text-[20px] mb-[20px]"
             >
               A message from our founder
             </p>
             <h1
-              class="text-[60px] font-extrabold leading-[80px] w-[90%] text-[#240D4B]"
+              class="text-[36px] lg:text-[60px] font-extrabold leading-[45px] lg:leading-[80px] w-full lg:w-[90%] text-[#240D4B]"
             >
               Greenlight was created to fix the pitfalls I’ve seen over my 20
               year career
             </h1>
           </div>
-          <p class="text-[18px] font-light text-[#232323] mt-[20px] w-[80%]">
+          <p
+            class="text-[16px] lg:text-[18px] font-light text-[#232323] mt-[20px] w-full lg:w-[80%]"
+          >
             When I started this journey, I had one goal in mind: to simplify the
             process of building high-quality websites for businesses like yours.
             I’ve seen too many people overwhelmed by complicated tech, overblown
             costs, and endless delays—and I knew there had to be a better way.
           </p>
-          <p class="text-[18px] font-light text-[#232323] mt-[20px] w-[80%]">
+          <p
+            class="text-[16px] lg:text-[18px] font-light text-[#232323] mt-[20px] w-full lg:w-[80%]"
+          >
             At Green Light Digital, we believe every business deserves a
             professional online presence without the stress. That’s why we focus
             on speed, affordability, and transparency, delivering websites that
             not only look amazing but are ready to drive results.
           </p>
-          <p class="text-[18px] font-bold text-[#232323] mt-[20px] w-[80%]">
+          <p
+            class="text-[16px] lg:text-[18px] font-bold text-[#232323] mt-[20px] w-full lg:w-[80%]"
+          >
             Thank you for trusting us with your vision. We’re excited to help
             you bring it to life!
           </p>
           <div>
-            <div class="flex items-center gap-[10px] mt-[30px]">
-              <img src="/public/images/Brown.png" alt="" class="w-[100px]" />
-              <img src="/public/images/Daniel.png" alt="" class="w-[100px]" />
+            <!-- Image Section for the Founder -->
+            <div
+              class="flex flex-col sm:flex-row items-start sm:items-center gap-[10px] mt-[30px]"
+            >
+              <img
+                src="/public/images/Brown.png"
+                alt="Founder Image"
+                class="w-[100px]"
+              />
+              <img
+                src="/public/images/Daniel.png"
+                alt="Founder Daniel"
+                class="w-[100px]"
+              />
             </div>
-            <div class="flex justify-between w-[80%] mt-[50px]">
-              <p class="text-[20px] font-bold text-[#232323]">
+            <div
+              class="flex flex-col sm:flex-row sm:justify-between gap-[20px] w-full lg:w-[80%] mt-[50px]"
+            >
+              <p class="text-[18px] lg:text-[20px] font-bold text-[#232323]">
                 Daniel Brown <br />
                 <span class="font-light">Founder & Director</span>
               </p>
               <button
-                class="w-[200px] py-[5px] bg-[#240D4B] text-white font-bold text-[20px] rounded-[10px] cursor-pointer"
+                class="w-full sm:w-[200px] py-[10px] bg-[#240D4B] text-white font-bold text-[18px] lg:text-[20px] rounded-[10px] cursor-pointer"
               >
                 Get Started
               </button>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </section>
 
     <!-- <section class="my-[150px] w-[90%] m-auto">
